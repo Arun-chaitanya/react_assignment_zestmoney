@@ -1,0 +1,65 @@
+.tile{
+  width: 140px;
+  margin: 0px;  
+}
+
+.tile__info{
+  display: flex;
+  flex-direction: column;
+}
+
+.tile__wrapper {
+  position: relative;
+}
+  
+img{
+  width: 140px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+  
+.tile__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: black;
+  cursor: pointer;
+}
+
+.tile__overlayContent {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  -ms-transform: translate(-50%, -20%);
+  text-align: center;
+  cursor: pointer;
+ }
+  
+.tile__wrapper:hover .tile__overlay {
+  opacity: 0.9;
+}
+
+.info__title{
+  color:white;
+  font-weight: bolder;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.info__date{
+color:gray;
+font-weight: bolder;
+font-size: 10px;
+}

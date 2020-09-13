@@ -1,0 +1,11 @@
+.viewport{
+    padding: 20px;
+    background-color: rgb(23,24,28);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tile__div{
+    margin:10px !important;
+}
